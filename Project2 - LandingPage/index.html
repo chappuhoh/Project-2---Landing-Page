@@ -1,0 +1,75 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+<!--  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('footer').style.backgroundColor = 'purple';
+    });
+  </script> -->
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Landing Page </h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="active-section">
+      <div class="landing__container">
+        <h2>Section 1</h2>
+        <p>Icing brownie gingerbread tart cotton candy halvah brownie. Tiramisu soufflé tootsie roll tootsie roll shortbread wafer dragée. Lemon drops chupa chups jujubes lemon drops topping tiramisu toffee cake. Bear claw powder liquorice tootsie roll chocolate bar pudding caramels tart gingerbread.</p>
+
+        <p>Cake powder cotton candy sesame snaps bear claw tart pastry croissant marzipan. Tootsie roll sesame snaps powder pie dragée sesame snaps lollipop liquorice sesame snaps. Oat cake jelly carrot cake tiramisu liquorice soufflé gummi bears soufflé. Chocolate wafer brownie jelly-o bonbon halvah tiramisu.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>Section 2</h2>
+        <p>Brownie jujubes shortbread cupcake oat cake gingerbread jelly beans tootsie roll marzipan. Gummies cotton candy jelly beans topping marshmallow cheesecake pastry. Muffin jelly beans muffin carrot cake tart ice cream bear claw. Cake bonbon liquorice danish candy canes dessert biscuit.</p>
+
+        <p>Dessert shortbread chocolate gummies jelly beans oat cake dragée jelly. Carrot cake liquorice bonbon candy canes sweet roll cake. Bonbon jelly chupa chups dessert jelly-o cookie cotton candy gummi bears. Gummi bears bonbon pie pastry sweet sweet.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Section 3</h2>
+        <p>Sesame snaps candy cake gummi bears candy canes. Marshmallow candy canes oat cake apple pie soufflé biscuit. Sweet wafer ice cream marshmallow toffee muffin. Sweet tiramisu liquorice lollipop brownie apple pie dessert. Cookie brownie dessert tiramisu sesame snaps tiramisu donut gummies bonbon. Macaroon macaroon cheesecake sweet roll gingerbread. Chocolate cake bonbon donut chocolate cake jujubes donut jelly beans.</p>
+
+        <p>Tart cupcake sweet bear claw jelly beans shortbread pie. Oat cake chocolate cake cookie candy donut liquorice. Cotton candy jelly soufflé marzipan topping cake gingerbread danish. Wafer gummies soufflé apple pie chocolate marzipan. Toffee marzipan toffee sweet lollipop liquorice toffee chocolate bar. Powder biscuit pie jujubes cotton candy. Chocolate bar marshmallow sesame snaps gummies jelly biscuit. Caramels carrot cake chocolate cake marshmallow cotton candy liquorice.</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>Section 4</h2>
+        <p>Chocolate chocolate cake pie brownie sesame snaps tart donut. Bear claw tootsie roll cupcake marshmallow sesame snaps shortbread jelly beans. Gingerbread marshmallow cookie marzipan fruitcake icing. Liquorice wafer marzipan cake sesame snaps pudding candy. Cheesecake danish sugar plum bonbon lemon drops. Macaroon bear claw cake gummies gummies cake macaroon.</p>
+
+        <p>Chocolate dessert ice cream chocolate bar sweet chocolate apple pie ice cream. Muffin halvah sugar plum bonbon chupa chups. Muffin gingerbread shortbread biscuit candy pudding. Danish cookie jelly danish carrot cake brownie jujubes cake. Topping bonbon cake wafer dessert. Danish carrot cake caramels tart muffin sugar plum. Tootsie roll wafer carrot cake muffin chocolate cake jelly beans. Gummi bears donut tootsie roll macaroon chocolate cake donut candy canes. Bonbon brownie brownie donut dragée. Apple pie apple pie marshmallow apple pie dessert.</p>
+      </div>
+    </section>    
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+
+
+<script defer src="js/app.js"></script>
+
+</body>
+</html>
